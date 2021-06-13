@@ -6,7 +6,7 @@ int main() {
   int i = 1;
   cin >> N >> A;
 
-  for(N; N > 0; N--) {
+  for(; N > 0; N--) {
     
     int b;
     string a;
@@ -32,13 +32,14 @@ int main() {
       cout << i << ":" <<  A << endl;
     }
 
-    else if(a == "/") {
+    else if(a == "/" && b != 0) {
       A /= b;
       cout << i << ":" << A << endl;
     }
 
     else {
       cout << "error!" << endl;
+      break;
     }
 
     i++;
