@@ -1,14 +1,10 @@
 #include <bits/stdc++.h>
 using namespace std;
 
-/*メモ
-  ・これはYがあれば袋が４になるって単純な問題だと思ったがどうなのか
-
-*/
 int main() {
 
   int N;
-  int count = 0;
+  int count = 1;
   string S;
 
   cin >> N;
@@ -18,19 +14,19 @@ int main() {
     cin >> S;
 
     if(S == "P") {
-      count += 2;
+      count *= 2;
     }
 
     else if(S == "W") {
-      count += 2;
+      count *= 2;
     }
 
     else if(S == "G") {
-      count += 2;
+      count *= 2;
     }
 
     else if(S == "Y") {
-      count += 1;
+      count = 0;
     }
 
     else {
@@ -38,11 +34,11 @@ int main() {
     }
   }
 
-  if(count % 2 == 0) {
+  if(count % 3 != 0) {
     cout << "Three" << "\n";
   }
 
-  else if(count % 2 != 0) {
+  else if(count % 3 == 0) {
     cout << "Four" << "\n";
   }
 }
