@@ -14,15 +14,15 @@ int main() {
     cin >> S;
 
     if(S == "P") {
-      count *= 2;
+      count *= 1;
     }
 
     else if(S == "W") {
-      count *= 2;
+      count *= 1;
     }
 
     else if(S == "G") {
-      count *= 2;
+      count *= 1;
     }
 
     else if(S == "Y") {
@@ -34,11 +34,11 @@ int main() {
     }
   }
 
-  if(count % 3 != 0) {
+  if(count % 2 != 0) {
     cout << "Three" << "\n";
   }
 
-  else if(count % 3 == 0) {
+  else {
     cout << "Four" << "\n";
   }
 }
