@@ -6,7 +6,7 @@ int main() {
   string S;
   cin >> S;
   
-  int number = S.at(0);
+  int number = 1;
 
   for(int i = 0; i < S.size(); i++ ) {
     char c = S.at(i);
