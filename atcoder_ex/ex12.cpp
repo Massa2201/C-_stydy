@@ -13,10 +13,10 @@ int main() {
 
     if(i % 2 != 0) {
       if(c == '+') {
-        number += S.at(i + 1);
+        number += 1;
       }
       else {
-        number -= S.at(i + 1);
+        number -= 1;
       }
     }
   }
