@@ -5,9 +5,10 @@ int main() {
 
   int N, avg;
   int sum = 0;
+  cin >> N;
   vector<int> a(N);
   vector<int> ans(N);
-  cin >> N;
+  
 
   for(int i = 0; i < N; i++) {
     cin >> a.at(i);
@@ -26,6 +27,6 @@ int main() {
   }
 
   for(int i = 0; i < N; i++) {
-    cout << ans.at(i);
+    cout << ans.at(i) << "\n";
   }
 }
