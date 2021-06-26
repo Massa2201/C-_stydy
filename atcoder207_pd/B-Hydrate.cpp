@@ -2,7 +2,7 @@
 using namespace std;
 
 int main() {
-  int a, b, c, d;
+  long long a, b, c, d;
   int count = 0;
   cin >> a >> b >> c >> d;
 
