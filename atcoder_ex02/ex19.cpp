@@ -14,9 +14,15 @@ void saiten(/* 呼び出し側に対応するように引数を書く */vector<v
     B.at(i)--;
   }
   */
-  for (int i = 0; i < A.size() - 1; i++) {
-    for (int j = 0; j < A.size() - 1; j++) {
-      if (A.at(i).at(j) != )
+  for (int i = 0; i < A.size(); i++) {
+    for (int j = 0; j < A.size(); j++) {
+      if (A.at(i).at(j) != (i + 1) * (j + 1)) {
+        A.at(i).at(j) = (i + 1) * (j + 1);
+        wrong_count++;
+      } 
+      else {
+        correct_count++;
+      }
     }
   }
 }
