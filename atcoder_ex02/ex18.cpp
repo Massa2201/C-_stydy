@@ -9,5 +9,27 @@ int main() {
     cin >> A.at(i) >> B.at(i);
   }
 
-  
+  vector<vector<char>> box(N, vector<char>(N));
+  for (int i = 0; i < N; i++) {
+    for (int j = 0; j < N; j++) {
+      box.at(i).at(j) = '-';
+    }
+  }
+  for (int i = 0; i < M; i++) {
+    box.at(A.at(i)).at(B.at(i)) = 'o';
+    box.at(B.at(i)).at(A.at(i)) = 'x';
+  }
+
+  for (int i = 0; i < N; i++) {
+    for (int j = 0; j < N; j++) {
+      cout << box.at(i).at(j) << "\n";
+      if (j != N - 1) {
+        cout << " ";
+      }
+      else {
+        cout << "\n";
+      }
+    }
+  }
+
 }
