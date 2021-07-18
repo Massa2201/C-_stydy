@@ -8,8 +8,6 @@ void saiten(/* 呼び出し側に対応するように引数を書く */vector<v
   // Aのうち、誤った値の書かれたマスの個数を wrong_count に入れる
  
   // ここにプログラムを追記
-  vector<vector<int>> B;
-  B = A;
   /*
   for (int i = 0; i < A.size(); i++) {
     A.at(i)--;
@@ -18,13 +16,7 @@ void saiten(/* 呼び出し側に対応するように引数を書く */vector<v
   */
   for (int i = 0; i < A.size() - 1; i++) {
     for (int j = 0; j < A.size() - 1; j++) {
-      A.at(i + 1).at(j + 1) = A.at(i + 1).at(0) * A.at(0).at(j + 1); 
-      if(A == B) {
-        correct_count++;
-      }
-      else {
-        wrong_count++;
-      }
+      if (A.at(i).at(j) != )
     }
   }
 }
