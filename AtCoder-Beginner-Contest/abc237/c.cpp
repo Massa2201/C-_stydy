@@ -25,6 +25,15 @@ int main() {
     }
   }
 
+  for (int i = 0; i < b - 1; i++) {
+    if(n.at(i) == "a") {
+      cnt2--;
+    }
+    else {
+      break;
+    }
+  }
+
   for (int i = 0; i < b / 2; i++) {
     if (n.at(i) == n.at(b - 1 - i)) {
       continue;
