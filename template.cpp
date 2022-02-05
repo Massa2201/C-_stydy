@@ -4,7 +4,9 @@ using ll = long long;
 using ld = long double;
 
 int main() {
-  
+  ll n, a, b;
+  ll cnt = 0;
+  ll ans = 0;
 }
 
 
